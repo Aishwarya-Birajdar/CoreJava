@@ -32,7 +32,15 @@ public class Employee {
 		System.out.println("4. salary : "+salary);
 		
 		/* Output :
-		      
+		     Enter Employee Id : 1
+             Enter Employee Name : jon
+             Enter Employee Address : maharashtra
+             Enter Employee Salary : 34344
+       
+             1. Id : 1
+             2. Name : jon
+             3. Address : maharashtra
+             4. salary : 34344.0
 		 */
 		
     }
