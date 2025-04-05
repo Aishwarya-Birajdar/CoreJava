@@ -1,39 +1,27 @@
-package Basic_Anudip;
+package Basic;
 
 import java.util.Scanner;
 
 public class PerfectNo {
 
-	public static void main(String[] args) {   // main method
+	public static void main(String[] args) {
 		
-		// User Input
-		Scanner sc = new Scanner(System.in);  // Scanner class for input
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Number");
-		int num = sc.nextInt();
-		int sum = 0;    // starting sum = 0;
+		int n = sc.nextInt();
+		int sum = 0;
 		
-		/* A number whose sum of factors (excluding the number itself) 
-           equal to the number is called a perfect number.
-		  */
-		
-		for (int i=1; i<=num/2; i++) {  
-			if (num % i == 0) {   
+		for (int i=1; i<=n; i++) {
+			if (n % i == 0) {
 				sum = sum + i;
 			}
 		}
 		
-		if (num == sum) {  
+		if (n == sum) {
 			System.out.println("Perfect Number");
 		} else {
 			System.out.println("Not Perfect Number");
 		}
-		
-	  /*output :
-		Enter Number
-		6
-		Perfect Number
-      */
-		
 	}
 
 }
