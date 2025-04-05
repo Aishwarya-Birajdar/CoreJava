@@ -2,7 +2,7 @@ package BasicProgram;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class ReverseNumber {
 
 	public static void main(String[] args) {
 		
@@ -10,12 +10,16 @@ public class Factorial {
 		System.out.println("Enter a number ");
 		int n = sc.nextInt();
 		
-		int fact = 1;
-		for(int i=1; i<=n; i++)
+		System.out.println(n);
+		int r ;
+		
+		System.out.println("Reverse Number ");
+		while(n > 0)
 		{
-			fact = fact * i;
+			r=n%10;
+			System.out.print(r+"");
+			n=n/10;
 		}
-		System.out.println("Factorial of "+n+" is "+fact);
 	}
 
 }

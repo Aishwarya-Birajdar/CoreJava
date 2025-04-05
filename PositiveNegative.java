@@ -2,30 +2,25 @@ package BasicProgram;
 
 import java.util.Scanner;
 
-public class PrimeNo {
+public class PositiveNegative {
 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter number ");
 		int n = sc.nextInt();
-		int count = 0;
-	
-		for(int i=1; i<=n; i++)
-		{
-			if(n%i == 0)
-			{
-				count++;
-			}
-		}
 		
-		if(count == 2)
+		if(n > 0)
 		{
-			System.out.println("Prime Number ");
+			System.out.println("Positive Number ");
+		}
+		else if(n < 0)
+		{
+			System.out.println("Negative Number");
 		}
 		else
 		{
-			System.out.println("Not Prime Number");
+			System.out.println("Both Not");
 		}
 	}
 

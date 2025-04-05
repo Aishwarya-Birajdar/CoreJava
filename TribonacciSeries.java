@@ -2,7 +2,7 @@ package BasicProgram;
 
 import java.util.Scanner;
 
-public class Fibonacci {
+public class TribonacciSeries {
 
 	public static void main(String[] args) {
 		
@@ -10,14 +10,15 @@ public class Fibonacci {
 		System.out.println("Enter Term ");
 		int term = sc.nextInt();
 		
-		int a = 0, b = 1, c;
+		int a = 0, b = 1, c = 2, d;
 		
 		for(int i=1; i<=term; i++)
 		{
 			System.out.print(a +" ");
-			c = a + b;
+			d = a + b + c;
 			a = b;
 			b = c;
+			c = d;
 		}
 	}
 

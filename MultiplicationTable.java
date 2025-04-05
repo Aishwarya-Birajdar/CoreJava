@@ -2,7 +2,7 @@ package BasicProgram;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class MultiplicationTable {
 
 	public static void main(String[] args) {
 		
@@ -10,12 +10,12 @@ public class Factorial {
 		System.out.println("Enter a number ");
 		int n = sc.nextInt();
 		
-		int fact = 1;
-		for(int i=1; i<=n; i++)
+		System.out.println("Multiplication Table "+n);
+		for(int i=1; i<=10; i++)
 		{
-			fact = fact * i;
+			System.out.println(n+" X "+ i +" = "+(n*i));
 		}
-		System.out.println("Factorial of "+n+" is "+fact);
+		
 	}
 
 }
